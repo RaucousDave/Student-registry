@@ -1,10 +1,10 @@
 import { toNodeHandler } from "better-auth/node";
 import type { Request, Response } from "express";
 import express from "express";
-import { auth } from "./auth";
-import studentsRouter from "./routes/student.route";
-import projectRouter from "./routes/project.route";
-import scoreRouter from "./routes/score.route";
+import { auth } from "./auth.js";
+import studentsRouter from "./routes/student.route.js";
+import projectRouter from "./routes/project.route.js";
+import scoreRouter from "./routes/score.route.js";
 
 const app = express();
 
@@ -31,3 +31,5 @@ app.get("/api/health", (req: Request, res: Response) => {
 app.listen(PORT, () => {
   console.log("Server is running on Port: ", PORT);
 });
+
+export default app;

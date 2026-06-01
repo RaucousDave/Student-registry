@@ -10,7 +10,9 @@
     "tsx": "^4.22.3"
   },
   "scripts": {
-    "dev": "bun --watch index.ts"
+    "dev": "bun --watch index.ts",
+    "build": "",
+    "vercel-build": "echo hello"
   },
   "peerDependencies": {
     "typescript": "^5"
